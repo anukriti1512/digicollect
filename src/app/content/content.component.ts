@@ -12,6 +12,7 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
     this.homeService.getprofileData().subscribe((json: any) => {
+      console.log(json);
       this.profileData = json.data;
       console.log(this.profileData);
     });
