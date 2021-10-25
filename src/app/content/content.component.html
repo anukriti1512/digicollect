@@ -1,31 +1,33 @@
-<div class="container">
-  <div id="pointer"><div class="profile">Profile</div></div>
-  <div id="edit-tab">
-    <i class="bi bi-person"></i> | <i class="bi bi-pen"></i>
-  </div>
-  <div id="filter-tab">
-    <i style="color: white" class="bi bi-funnel"></i> Filter
-  </div>
-  <div id="create-new-tab"><i class="bi bi-plus-circle"></i> Create New</div>
-  <div id="view-tab">
-    <i class="bi bi-list"></i> | <i class="bi bi-grid-fill"></i>
-  </div>
+<div class="outer-container">
+  <div class="container">
+    <div id="pointer"><div class="profile">Profile</div></div>
+    <div id="edit-tab">
+      <i class="bi bi-person"></i> | <i class="bi bi-pen"></i>
+    </div>
+    <div id="filter-tab">
+      <i style="color: white" class="bi bi-funnel"></i> Filter
+    </div>
+    <div id="create-new-tab"><i class="bi bi-plus-circle"></i> Create New</div>
+    <div id="view-tab">
+      <i class="bi bi-list"></i> | <i class="bi bi-grid-fill"></i>
+    </div>
 
-  <div id="profile-base-container">
-    <div class="profile-container">
-      <div class="profile-card" *ngFor="let profile of profileData">
-        <img id="profile-img" src="{{ profile.avatar }}" />
-        <div id="full-name">
-          {{ profile.first_name }} {{ profile.last_name }}
-        </div>
-        <div class="employeeID">
-          <label id="emp-id-label">Employee ID : </label>
-          <span id="emp-value">{{ profile.id }}</span>
-        </div>
-        <div class="divider"></div>
-        <div class="email">
-          <label id="email-id-label">Email : </label>
-          <span id="email-value">{{ profile.email }}</span>
+    <div id="profile-base-container">
+      <div class="profile-container">
+        <div class="profile-card" *ngFor="let profile of profileData">
+          <img id="profile-img" src="{{ profile.avatar }}" />
+          <div id="full-name">
+            {{ profile.first_name }} {{ profile.last_name }}
+          </div>
+          <div class="employeeID">
+            <label id="emp-id-label">Employee ID : </label>
+            <span id="emp-value">{{ profile.id }}</span>
+          </div>
+          <div class="divider"></div>
+          <div class="email">
+            <label id="email-id-label">Email : </label>
+            <span id="email-value">{{ profile.email }}</span>
+          </div>
         </div>
       </div>
     </div>
